@@ -1,17 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Img = styled.img`
-	align: center;
+const Section = styled.section`
+	background-color: #94775d;
+	height: 200px;
 `;
-
-const Header = (props) => {
+const Header = () => {
 	return (
 		<>
-			<Img
-				src={'images/Images-Daily-Blog-Header.png'}
-				alt='the images daily blog'
-			/>
+			<Section>
+				<div class='container'>
+					<div class='text'></div>
+				</div>
+			</Section>
 			<h3>
 				Hello!! You've found a blog of daily images. This is a work in
 				progress. Eventually we hope to share daily images from around th
