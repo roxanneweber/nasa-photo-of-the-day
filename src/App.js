@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
-import Header from './components/Header';
-import Details from './components/Details';
+import Header from './components/Header.jsx';
+import Details from './components/Details.jsx';
+import Image from './components/Image.jsx';
 
 function App() {
 	const [daily, setDaily] = useState([]);
@@ -23,6 +24,7 @@ function App() {
 		<div className='App'>
 			<Header daily={daily} />
 			<Details daily={daily} />
+			<Image daily={daily} />
 		</div>
 	);
 }

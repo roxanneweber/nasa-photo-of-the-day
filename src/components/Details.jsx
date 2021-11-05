@@ -5,7 +5,6 @@ const Details = (props) => {
 	return (
 		<>
 			<div>
-				<img src={props.daily.url} alt='NASA daily' />
 				<p>{props.daily.explanation}</p>
 			</div>
 		</>
