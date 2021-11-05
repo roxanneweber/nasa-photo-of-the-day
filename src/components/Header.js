@@ -1,12 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Img = styled.img`
+	align: center;
+`;
 
 const Header = (props) => {
 	return (
 		<>
-			<h1>page logo</h1>
-			<h2>{props.daily.title}</h2>
+			<Img
+				src={'images/Images-Daily-Blog-Header.png'}
+				alt='the images daily blog'
+			/>
 			<h3>
-				{props.daily.copyright}, {props.daily.date}
+				Hello!! You've found a blog of daily images. This is a work in
+				progress. Eventually we hope to share daily images from around th
+				World Wide Web. For now, enjoy a daily image from the US National
+				Aeronautics and Space Administration.
 			</h3>
 		</>
 	);
